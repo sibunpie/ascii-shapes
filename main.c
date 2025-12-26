@@ -60,8 +60,8 @@ int main(void) {
     draw_rect(buffer, &rect_coords, '*');   // frame
 
     // print text
-    char* message = "LINER by sibunpie";
-    int start_x = (w.ws_col - 17) / 2;
+    char* message = "ASCII Shapes by sibunpie";
+    int start_x = (w.ws_col - 24) / 2;
     for (int i = 0; message[i] != '\0'; i++) {
         if (start_x + i < w.ws_col && 2 < w.ws_row) {
             buffer->data[2][start_x + i] = message[i];
